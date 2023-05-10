@@ -266,14 +266,6 @@
       },
       "url": "https://packages.unity.com"
     },
-    "com.unity.xr.openxr.picoxr": {
-      "version": "file:C:/Users/GameLab/Downloads/PICO Unity OpenXR Plugin（Experiment）(1)",
-      "depth": 0,
-      "source": "local",
-      "dependencies": {
-        "com.unity.xr.openxr": "1.3.0"
-      }
-    },
     "com.unity.modules.ai": {
       "version": "1.0.0",
       "depth": 0,
