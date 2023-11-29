@@ -2,7 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
-using Newtonsoft.Json;
+//using Newtonsoft.Json;
 using TMPro;
 using Unity.XR.CoreUtils;
 using UnityEngine;
@@ -63,7 +63,7 @@ public class GameManager : MonoBehaviour
         
         if (File.Exists(filePath))
         { 
-            playersInfo = JsonConvert.DeserializeObject<AllPlayersInfoClass>(File.ReadAllText(filePath)); 
+            //playersInfo = JsonConvert.DeserializeObject<AllPlayersInfoClass>(File.ReadAllText(filePath)); 
         }
         
         //PlayersInfo playersInfo = new PlayersInfo();
@@ -73,8 +73,8 @@ public class GameManager : MonoBehaviour
 
         
         playersInfo.PlayersInfos.Add(player);
-        var jsonString = JsonConvert.SerializeObject(playersInfo);
-        File.WriteAllText(filePath, jsonString);
+        //var jsonString = JsonConvert.SerializeObject(playersInfo);
+        //File.WriteAllText(filePath, jsonString);
 
 
         SceneManager.LoadScene("GameOver");

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using Newtonsoft.Json;
+//using Newtonsoft.Json;
 using TMPro;
 using UnityEngine;
 
@@ -23,17 +23,17 @@ public class LeaderboardManager : MonoBehaviour
             txtLose.SetActive(false);
             leaderBoard.SetActive(true);
             var filePath = Path.Combine(Application.persistentDataPath, "Leaderboard.json");
-            AllPlayersInfoClass playersInfo = JsonConvert.DeserializeObject<AllPlayersInfoClass>(File.ReadAllText(filePath));
-            playersInfo.PlayersInfos = playersInfo.PlayersInfos.OrderByDescending(x => x.Points).ToList();
-            for (int i = 0; i < leaderBoardPlayers.Length; i++)
-            {
-                if (i >= playersInfo.PlayersInfos.Count)
-                {
-                    break;
-                }
-                leaderBoardPlayers[i].transform.Find("txtPlayer").GetComponent<TextMeshProUGUI>().text = playersInfo.PlayersInfos[i].Name;
-                leaderBoardPlayers[i].transform.Find("txtPoints").GetComponent<TextMeshProUGUI>().text = playersInfo.PlayersInfos[i].Points.ToString();
-            } 
+            // AllPlayersInfoClass playersInfo = JsonConvert.DeserializeObject<AllPlayersInfoClass>(File.ReadAllText(filePath));
+            // playersInfo.PlayersInfos = playersInfo.PlayersInfos.OrderByDescending(x => x.Points).ToList();
+            // for (int i = 0; i < leaderBoardPlayers.Length; i++)
+            // {
+            //     if (i >= playersInfo.PlayersInfos.Count)
+            //     {
+            //         break;
+            //     }
+            //     leaderBoardPlayers[i].transform.Find("txtPlayer").GetComponent<TextMeshProUGUI>().text = playersInfo.PlayersInfos[i].Name;
+            //     leaderBoardPlayers[i].transform.Find("txtPoints").GetComponent<TextMeshProUGUI>().text = playersInfo.PlayersInfos[i].Points.ToString();
+            // } 
         }
         else
         {
