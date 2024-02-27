@@ -138,6 +138,8 @@ PlayerSettings:
   bundleVersion: 0.1.0
   preloadedAssets:
   - {fileID: 0}
+  - {fileID: 2452645171079744022, guid: 16c8d7d229e18c84c98ccfdd79aa7049, type: 2}
+  - {fileID: 8921008785240568978, guid: 048d329ccf9452441a9d72a2580dadfd, type: 2}
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1
@@ -158,7 +160,7 @@ PlayerSettings:
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
     Android: com.CIFPPauCasesnoves.QuinCaparrotVR3
-    Standalone: com.UnityTechnologies.com.unity.template-starter-kit
+    Standalone: com.CIFP-Pau-Casesnoves.QuinCaparrotVR3
   buildNumber:
     Standalone: 0
     iPhone: 0

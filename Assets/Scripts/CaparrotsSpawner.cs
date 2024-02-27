@@ -10,9 +10,9 @@ public class CaparrotsSpawner : MonoBehaviour
     [SerializeField] private GameObject[] caparrotsPrefabs = new GameObject[11];
     
     private float xMin = -4.5f;
-    private float xMax = 9.15f;
-    private float zMin = -2f;
-    private float zMax = 2f;
+    private float xMax = 18f;
+    private float zMin = -15f;
+    private float zMax = 15f;
     private float yDefault = 0.5f;
     
     // Start is called before the first frame update
